@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information - KL University</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            margin-top: 100px;
+            color: #003366;
+        }
+
+        button {
+            background-color: #0078d7;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        #count {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        footer {
+            background-color: #003366;
+            color: white;
+            padding: 10px 0;
+            font-size: 18px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Student Information Portal</h1>
+    <p>Click the button below to increase the count:</p>
+
+    <button onclick="increaseCount()">Count</button>
+    <div id="count">Count: 0</div>
+
+    <footer>
+        Student Information - KL University
+    </footer>
+
+    <script>
+        let counter = 0;
+        function increaseCount() {
+            counter++;
+            document.getElementById("count").innerText = "Count: " + counter;
+        }
+    </script>
+
+</body>
+</html>
